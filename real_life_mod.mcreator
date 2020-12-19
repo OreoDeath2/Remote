@@ -27,6 +27,51 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "pink_biome"
+    },
+    {
+      "name": "PinkPlank",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pink_plank"
+    },
+    {
+      "name": "CraftingTable",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crafting_table"
+    },
+    {
+      "name": "PinkPlankRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pink_plank_recipe"
+    },
+    {
+      "name": "PinkSword",
+      "type": "tool",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pink_sword"
+    },
+    {
+      "name": "PinkSwordSwordRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pink_sword_sword_recipe"
     }
   ],
   "variable_elements": [],
@@ -34,7 +79,6 @@
   "language_map": {
     "en_us": {
       "block.real_life_mod.test": "Cherry leafs",
-      "biome.real_life_mod.pink_biome": "Pink Biome",
       "block.real_life_mod.pink_wood": "Pink Wood"
     }
   },
