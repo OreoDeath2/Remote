@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "real_life_mod:blocks/pinkwood_planks",
+    "up": "real_life_mod:blocks/pinkwood_planks",
+    "north": "real_life_mod:blocks/pinkwood_planks",
+    "east": "real_life_mod:blocks/pinkwood_planks",
+    "south": "real_life_mod:blocks/pinkwood_planks",
+    "west": "real_life_mod:blocks/pinkwood_planks",
+    "particle": "real_life_mod:blocks/pinkwood_planks"
+  }
+}
