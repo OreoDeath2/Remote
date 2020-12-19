@@ -9,13 +9,23 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "test"
+    },
+    {
+      "name": "PinkWood",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pink_wood"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.real_life_mod.test": "Cherry leafs"
+      "block.real_life_mod.test": "Cherry leafs",
+      "block.real_life_mod.pink_wood": "Pink Wood"
     }
   },
   "workspaceSettings": {
