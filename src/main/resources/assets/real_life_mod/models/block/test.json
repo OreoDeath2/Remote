@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "real_life_mod:blocks/pink_leaves",
+    "up": "real_life_mod:blocks/pink_leaves",
+    "north": "real_life_mod:blocks/pink_leaves",
+    "east": "real_life_mod:blocks/pink_leaves",
+    "south": "real_life_mod:blocks/pink_leaves",
+    "west": "real_life_mod:blocks/pink_leaves",
+    "particle": "real_life_mod:blocks/pink_leaves"
+  }
+}

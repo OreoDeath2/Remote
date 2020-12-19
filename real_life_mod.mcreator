@@ -1,0 +1,39 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Test",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.real_life_mod.test": "Cherry leafs"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "real_life_mod",
+    "modName": "Real Life Mod",
+    "version": "1.0.0",
+    "author": "airid, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.reallifemod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000547520
+}
