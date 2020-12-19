@@ -1,0 +1,16 @@
+{
+  "group": "real_life_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "real_life_mod:pink_wood"
+    }
+  },
+  "result": {
+    "item": "real_life_mod:pink_plank",
+    "count": 4
+  }
+}
