@@ -2,13 +2,13 @@
 package net.mcreator.reallifemod.item;
 
 @RealLifeModModElements.ModElement.Tag
-public class StickpinkItem extends RealLifeModModElements.ModElement {
+public class PinkStickItem extends RealLifeModModElements.ModElement {
 
-	@ObjectHolder("real_life_mod:stickpink")
+	@ObjectHolder("real_life_mod:pink_stick")
 	public static final Item block = null;
 
-	public StickpinkItem(RealLifeModModElements instance) {
-		super(instance, 16);
+	public PinkStickItem(RealLifeModModElements instance) {
+		super(instance, 14);
 
 	}
 
@@ -20,8 +20,8 @@ public class StickpinkItem extends RealLifeModModElements.ModElement {
 	public static class ItemCustom extends Item {
 
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("stickpink");
+			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
+			setRegistryName("pink_stick");
 		}
 
 		@Override
@@ -37,6 +37,12 @@ public class StickpinkItem extends RealLifeModModElements.ModElement {
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 			return 1F;
+		}
+
+		@Override
+		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+			super.addInformation(itemstack, world, list, flag);
+			list.add(new StringTextComponent("stick"));
 		}
 
 	}
