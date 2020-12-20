@@ -2,7 +2,7 @@
   "_fv": 13,
   "_type": "biome",
   "definition": {
-    "name": "Pink Biome",
+    "name": "Fall Biome",
     "groundBlock": {
       "value": "Blocks.GRASS"
     },
@@ -14,16 +14,16 @@
     "minHeight": 7,
     "spawnVines": false,
     "treeVines": {
-      "value": "CUSTOM:Test"
+      "value": "CUSTOM:OrangeLeaf"
     },
     "treeStem": {
-      "value": "CUSTOM:Test"
+      "value": "CUSTOM:OrangeLeaf"
     },
     "treeBranch": {
-      "value": "CUSTOM:PinkWood"
+      "value": "Blocks.LOG#0"
     },
     "treeFruits": {
-      "value": "CUSTOM:Test"
+      "value": "CUSTOM:OrangeLeaf"
     },
     "treesPerChunk": 3,
     "grassPerChunk": 4,

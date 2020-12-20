@@ -1,5 +1,6 @@
 {
   "block.real_life_mod.test": "Cherry leafs",
-  "item.real_life_mod.pink_stick": "Pink Stick",
-  "block.real_life_mod.pink_wood": "Pink Wood"
+  "item.real_life_mod.pink_sword": "Pink Sword",
+  "block.real_life_mod.pink_wood": "Pink Wood",
+  "block.real_life_mod.pink_plank": "Pink Plank"
 }

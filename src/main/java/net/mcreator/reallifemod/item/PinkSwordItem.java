@@ -1,12 +1,20 @@
 
 package net.mcreator.reallifemod.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+
+import net.mcreator.reallifemod.RealLifeModModElements;
+
 @RealLifeModModElements.ModElement.Tag
 public class PinkSwordItem extends RealLifeModModElements.ModElement {
-
 	@ObjectHolder("real_life_mod:pink_sword")
 	public static final Item block = null;
-
 	public PinkSwordItem(RealLifeModModElements instance) {
 		super(instance, 4);
 	}
@@ -38,8 +46,6 @@ public class PinkSwordItem extends RealLifeModModElements.ModElement {
 				return Ingredient.EMPTY;
 			}
 		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
-
 		}.setRegistryName("pink_sword"));
 	}
-
 }

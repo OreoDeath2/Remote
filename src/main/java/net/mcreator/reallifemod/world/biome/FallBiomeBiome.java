@@ -4,13 +4,13 @@ package net.mcreator.reallifemod.world.biome;
 import net.minecraft.block.material.Material;
 
 @RealLifeModModElements.ModElement.Tag
-public class PinkBiomeBiome extends RealLifeModModElements.ModElement {
+public class FallBiomeBiome extends RealLifeModModElements.ModElement {
 
-	@ObjectHolder("real_life_mod:pink_biome")
+	@ObjectHolder("real_life_mod:fall_biome")
 	public static final CustomBiome biome = null;
 
-	public PinkBiomeBiome(RealLifeModModElements instance) {
-		super(instance, 3);
+	public FallBiomeBiome(RealLifeModModElements instance) {
+		super(instance, 15);
 	}
 
 	@Override
@@ -33,7 +33,7 @@ public class PinkBiomeBiome extends RealLifeModModElements.ModElement {
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
 							Blocks.STONE.getDefaultState(), Blocks.STONE.getDefaultState())));
 
-			setRegistryName("pink_biome");
+			setRegistryName("fall_biome");
 
 			DefaultBiomeFeatures.addCarvers(this);
 			DefaultBiomeFeatures.addMonsterRooms(this);
@@ -49,12 +49,11 @@ public class PinkBiomeBiome extends RealLifeModModElements.ModElement {
 			this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS.withConfiguration(new SeaGrassConfig(20, 0.3D))
 					.withPlacement(Placement.TOP_SOLID_HEIGHTMAP.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
 
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-					new CustomTreeFeature()
-							.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(TestBlock.block.getDefaultState()),
-									new SimpleBlockStateProvider(PinkWoodBlock.block.getDefaultState()))).baseHeight(7)
-											.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
-							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, new CustomTreeFeature()
+					.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(OrangeLeafBlock.block.getDefaultState()),
+							new SimpleBlockStateProvider(Blocks.OAK_LOG.getDefaultState()))).baseHeight(7)
+									.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
+					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
 
 		}
 
@@ -125,9 +124,10 @@ public class PinkBiomeBiome extends RealLifeModModElements.ModElement {
 										state = world.getBlockState(blockpos);
 
 										if (state.getBlock().isAir(state, world, blockpos) || state.getMaterial().blocksMovement()
-												|| state.isIn(BlockTags.LEAVES) || state.getBlock() == TestBlock.block.getDefaultState().getBlock()
-												|| state.getBlock() == PinkWoodBlock.block.getDefaultState().getBlock()) {
-											setTreeBlockState(changedBlocks, world, blockpos, PinkWoodBlock.block.getDefaultState(), bbox);
+												|| state.isIn(BlockTags.LEAVES)
+												|| state.getBlock() == OrangeLeafBlock.block.getDefaultState().getBlock()
+												|| state.getBlock() == Blocks.OAK_LOG.getDefaultState().getBlock()) {
+											setTreeBlockState(changedBlocks, world, blockpos, Blocks.OAK_LOG.getDefaultState(), bbox);
 										}
 									}
 								}
@@ -138,11 +138,11 @@ public class PinkBiomeBiome extends RealLifeModModElements.ModElement {
 							BlockPos genhPos = position.up(genh);
 							state = world.getBlockState(genhPos);
 
-							setTreeBlockState(changedBlocks, world, genhPos, TestBlock.block.getDefaultState(), bbox);
+							setTreeBlockState(changedBlocks, world, genhPos, OrangeLeafBlock.block.getDefaultState(), bbox);
 
 							if (state.getBlock().isAir(state, world, genhPos) || state.getMaterial().blocksMovement() || state.isIn(BlockTags.LEAVES)
-									|| state.getBlock() == TestBlock.block.getDefaultState().getBlock()
-									|| state.getBlock() == PinkWoodBlock.block.getDefaultState().getBlock()) {
+									|| state.getBlock() == OrangeLeafBlock.block.getDefaultState().getBlock()
+									|| state.getBlock() == Blocks.OAK_LOG.getDefaultState().getBlock()) {
 
 							}
 						}
@@ -153,7 +153,7 @@ public class PinkBiomeBiome extends RealLifeModModElements.ModElement {
 									if (rand.nextInt(4 - hlevel) == 0) {
 										Direction dir = Direction.getOpposite();
 										setTreeBlockState(changedBlocks, world, position.add(dir.getXOffset(), height - 5 + hlevel, dir.getZOffset()),
-												TestBlock.block.getDefaultState(), bbox);
+												OrangeLeafBlock.block.getDefaultState(), bbox);
 									}
 								}
 							}
@@ -170,17 +170,17 @@ public class PinkBiomeBiome extends RealLifeModModElements.ModElement {
 		}
 
 		private void addVines(IWorld world, BlockPos pos, Set<BlockPos> changedBlocks, MutableBoundingBox bbox) {
-			setTreeBlockState(changedBlocks, world, pos, TestBlock.block.getDefaultState(), bbox);
+			setTreeBlockState(changedBlocks, world, pos, OrangeLeafBlock.block.getDefaultState(), bbox);
 			int i = 5;
 			for (BlockPos blockpos = pos.down(); world.isAirBlock(blockpos) && i > 0; --i) {
-				setTreeBlockState(changedBlocks, world, blockpos, TestBlock.block.getDefaultState(), bbox);
+				setTreeBlockState(changedBlocks, world, blockpos, OrangeLeafBlock.block.getDefaultState(), bbox);
 				blockpos = blockpos.down();
 			}
 		}
 
 		private boolean canGrowInto(Block blockType) {
-			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == TestBlock.block.getDefaultState().getBlock()
-					|| blockType == PinkWoodBlock.block.getDefaultState().getBlock() || blockType == Blocks.GRASS_BLOCK.getDefaultState().getBlock()
+			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == OrangeLeafBlock.block.getDefaultState().getBlock()
+					|| blockType == Blocks.OAK_LOG.getDefaultState().getBlock() || blockType == Blocks.GRASS_BLOCK.getDefaultState().getBlock()
 					|| blockType == Blocks.STONE.getDefaultState().getBlock();
 		}
 
