@@ -29,22 +29,13 @@
       "registry_name": "pink_plank"
     },
     {
-      "name": "PinkSwordSwordRecipe",
+      "name": "CraftingTable",
       "type": "recipe",
-      "sortid": 11,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pink_sword_sword_recipe"
-    },
-    {
-      "name": "PinkSword",
-      "type": "tool",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pink_sword"
+      "registry_name": "crafting_table"
     },
     {
       "name": "PinkPlankRecipe",
@@ -56,13 +47,31 @@
       "registry_name": "pink_plank_recipe"
     },
     {
-      "name": "CraftingTable",
-      "type": "recipe",
-      "sortid": 13,
+      "name": "PinkSword",
+      "type": "tool",
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crafting_table"
+      "registry_name": "pink_sword"
+    },
+    {
+      "name": "PinkSwordSwordRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pink_sword_sword_recipe"
+    },
+    {
+      "name": "PinkStick",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pink_stick"
     },
     {
       "name": "OrangeLeaf",
@@ -83,15 +92,6 @@
       "registry_name": "fall_biome"
     },
     {
-      "name": "PinkStick",
-      "type": "item",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pink_stick"
-    },
-    {
       "name": "PinkStick2",
       "type": "item",
       "sortid": 17,
@@ -99,6 +99,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "pink_stick_2"
+    },
+    {
+      "name": "Stickpink",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stickpink"
     }
   ],
   "variable_elements": [],
@@ -108,7 +117,6 @@
       "block.real_life_mod.test": "Cherry leafs",
       "item.real_life_mod.pink_stick": "Pink Stick",
       "item.real_life_mod.pink_sword": "Pink Sword",
-      "item.real_life_mod.pink_stick_2": "Pink Stick 2",
       "biome.real_life_mod.fall_biome": "Fall Biome",
       "block.real_life_mod.pink_wood": "Pink Wood",
       "block.real_life_mod.orange_leaf": "Orange Leaf",
