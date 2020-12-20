@@ -2,125 +2,20 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "Test",
-      "type": "block",
+      "name": "PinkStick",
+      "type": "item",
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "test"
-    },
-    {
-      "name": "PinkWood",
-      "type": "block",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pink_wood"
-    },
-    {
-      "name": "PinkPlank",
-      "type": "block",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pink_plank"
-    },
-    {
-      "name": "CraftingTable",
-      "type": "recipe",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "crafting_table"
-    },
-    {
-      "name": "PinkPlankRecipe",
-      "type": "recipe",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pink_plank_recipe"
-    },
-    {
-      "name": "PinkSword",
-      "type": "tool",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pink_sword"
-    },
-    {
-      "name": "PinkSwordSwordRecipe",
-      "type": "recipe",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pink_sword_sword_recipe"
-    },
-    {
-      "name": "PinkStick",
-      "type": "item",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
       "registry_name": "pink_stick"
-    },
-    {
-      "name": "OrangeLeaf",
-      "type": "block",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "orange_leaf"
-    },
-    {
-      "name": "FallBiome",
-      "type": "biome",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "fall_biome"
-    },
-    {
-      "name": "PinkStick2",
-      "type": "item",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pink_stick_2"
-    },
-    {
-      "name": "Stickpink",
-      "type": "item",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "stickpink"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.real_life_mod.test": "Cherry leafs",
-      "item.real_life_mod.pink_stick": "Pink Stick",
-      "item.real_life_mod.pink_sword": "Pink Sword",
-      "biome.real_life_mod.fall_biome": "Fall Biome",
-      "block.real_life_mod.pink_wood": "Pink Wood",
-      "block.real_life_mod.orange_leaf": "Orange Leaf",
-      "block.real_life_mod.pink_plank": "Pink Plank"
+      "item.real_life_mod.pink_stick": "Pink Stick"
     }
   },
   "workspaceSettings": {

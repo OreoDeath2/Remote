@@ -22,7 +22,7 @@ public class PinkStickItem extends RealLifeModModElements.ModElement {
 	@ObjectHolder("real_life_mod:pink_stick")
 	public static final Item block = null;
 	public PinkStickItem(RealLifeModModElements instance) {
-		super(instance, 16);
+		super(instance, 1);
 	}
 
 	@Override
