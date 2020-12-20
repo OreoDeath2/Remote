@@ -1,8 +1,9 @@
 {
   "block.real_life_mod.test": "Cherry leafs",
+  "item.real_life_mod.pink_sword": "Pink Sword",
   "biome.real_life_mod.fall_biome": "Fall Biome",
   "block.real_life_mod.pink_wood": "Pink Wood",
   "block.real_life_mod.orange_leaf": "Orange Leaf",
-  "item.real_life_mod.pink_sword": "Pink Sword",
+  "item.real_life_mod.stickpink": "Pink Stick",
   "block.real_life_mod.pink_plank": "Pink Plank"
 }
